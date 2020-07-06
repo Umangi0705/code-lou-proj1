@@ -40,27 +40,30 @@ p{
       font-size: xx-large;
       color: lightslategray;
   }
-  /* .column{
+   .row{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .row1{
-     
-      width: 33.3%;
-  }
-    .row2{
-        width:33.3%
-    } */
-    .column {
-        display: inline;
-      }
-      /* .holder img {
-        max-height: 200px;
-        max-width: 200px;
-        object-fit: cover;
-      }
-   */
+
+    background-color: lawngreen;
+  
+    
+    
+    
+   }
+   .column{
+       max-width: 20%;
+       justify-items: baseline;
+       flex: 33.33%;
+       padding: 5px;
+       align-items: center;
+    }
+    .temp{
+        width: 20%;
+    }
+    
+  
+    
+      
    
    
 
