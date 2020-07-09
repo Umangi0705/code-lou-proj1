@@ -1,28 +1,117 @@
+body{
+  background-color:linen;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  color: orange;
+  flex-basis: content;
+  justify-content: flex-end;
+  padding-right: 30px;
+  font-size: x-large;
+  padding: 30px 30px;
+  background-color:palevioletred;
+}
+p{
+  color:grey;
+}
+.logo {
+  width: 80px;
+  padding-right:850px;
+
+} 
+
+.boxa {
+    
+  padding: 10px;
+}
+.boxb{
+  
+  padding: 10px;
+}
+.boxc{
+ 
+  padding: 10px;
+}
+.box1{
+
+ padding-right: 800px;
+}
+
+.slideshow {
+  max-width: 100%;
+  padding-top: 170px;
+}
+.img1 {
+  height: 500px;
+}
+
 .image {
-    height: 536px;
-    width: 1242px;
+  display: none;
+
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+header {
+  width: 98.8%;
+  position: fixed;
 }
 .first li {
     list-style-type: none;
     display: inline;
-    background-color: brown;
+    background-color: rgb(173, 92, 92);
     font-size: x-large;
-  
- 
-
+    padding: 20px 10px;
+    color:darkgray;
    
-    width: 60px;
 }
 .second {
     display:flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+  
     
     margin-top: 50px;
    margin-left: 10px;
 
 }
-
+a:link {
+    color: green; 
+    background-color: transparent; 
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
     
    
 
@@ -43,25 +132,24 @@ p{
    .row{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+   
 
-    background-color: lawngreen;
   
     
     
     
    }
    .column{
-       max-width: 20%;
-       justify-items: baseline;
-       flex: 33.33%;
-       padding: 5px;
-       align-items: center;
-       flex-wrap: wrap;
-    }
-    .temp{
-        width: 20%;
-    }
+       max-width: 33.3%;
+       text-align: center;
+      
+   }
+     .img{
+     width:400px;
     
+   }
+
   
     
       
@@ -75,55 +163,18 @@ p{
    background-color: violet;
     font-size: large;
     flex-basis: content;
-    background-color: tomato;
+    background-color: rgb(230, 151, 138);
     padding-left: 30px ;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: left;
     margin-left: 30px;
   }
-.container {
-    display: flex;
-    flex-flow: row wrap;
-    color: orange;
-    flex-basis: content;
-    justify-content: flex-end;
-    padding-right: 30px;
-    font-size: x-large;
-    padding: 30px 30px;
- 
-  
-    background-color: rgb(64, 64, 95);
-}
 
-   
- .logo {
-    width: 100px;
-    padding-right: 800px;
 
-}   
-   
- 
-
-.boxa {
-    
-    padding: 10px;
-}
-.boxb{
-    
-    padding: 10px;
-}
-.boxc{
-   
-    padding: 10px;
-}
-.box1{
-  
-   padding-right: 800px;
-}
 .button{
-    width: 100px;
- background:#0066A2 ;   
+ width: 100px;
+ background:rgb(77, 138, 173) ;   
 color: white;
 border-style: outset;
 border-color: #0066A2;
@@ -131,8 +182,19 @@ height: 50px;
 width: 100px;
 font: bold 15px arial, sans-serif;
 text-shadow:none; 
+margin-bottom: 100px;
 
 }
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:grey;
+    color: white;
+    text-align: center;
+    padding-bottom: ;
+  }
 @media screen and (max-width: 500px) {
     .column {
       width: 100%;
