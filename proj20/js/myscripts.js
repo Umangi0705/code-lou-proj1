@@ -31,3 +31,6 @@ function myFunction() {
   document.getElementsByClassName("demo").style.color = "red";
   document.getElementsByClassName("demo").style.backgroundColor = "yellow";        
 }
+function showMessage(){
+  alert("Thank you for donating ");
+}

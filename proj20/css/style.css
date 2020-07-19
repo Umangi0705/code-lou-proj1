@@ -9,9 +9,10 @@ body{
   justify-content: flex-end;
   padding-right: 30px;
   font-size: x-large;
-  padding: 20px 20px;
-  background-color:black;
+  padding: 20px;
+  background-color:yellowgreen;
   margin-top: -10px;
+  
 }
 p{
   color:red
@@ -74,13 +75,20 @@ header {
   width: 98.8%;
   position: fixed;
 }
+.first{
+  margin-top: 10px;
+
+}
 .first li {
     list-style-type: none;
     display: inline;
-    background-color:black;
+    background-color:gray;
     font-size: x-large;
     padding: 20px 10px;
-    color:darkgray;
+    color:green;
+    margin-top: 40px;
+
+  
    
 }
 .second {
@@ -137,25 +145,42 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: center;
+   }
    
+.subdiv1{
+
+  padding-right: 30px;
+ 
+  font-size: large;
+  flex-basis: content;
+  background-color: rgb(32, 27, 26);
+  padding-left: 30px ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+
 
   
     
     
     
-   }
-   /* .column{
+   
+    .column{
        max-width: 33.3%;
        text-align: center;
       
-   } */
+   }
      .img{
      width:350px;
     
-   }
+   } 
 
-  
-    
+  .column1,.column2,.column3{
+    text-align: center;
+  }
       
    
    
@@ -192,12 +217,12 @@ margin-bottom: 100px;
 footer {
     position: fixed;
     left: 0;
-    bottom: 0;
+    /* bottom: 0; */
     width: 100%;
     background-color:black;
     color: white;
     text-align: center;
-    padding-bottom: ;
+  
   }
 
   
@@ -228,5 +253,21 @@ footer {
   .row{
     flex-direction: column;
   }
+  .second{
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+  .subdiv1{
+    margin-top: 40px;
+  }
+  .img1{
+    height: auto;
+  }
+  .container{
+   
+    padding-top: -50px;
+  }
+  
+
   
 }
