@@ -7,20 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
     <div class="container">
-    <img class="logo" src="img/logo.png">
-    <div class="boxa"><a href="#">Home</a></div>
-    <div class="boxb"><a href="about.html">About</a></div>
-    <div class="boxc"><a href="contact.html">Contact</a></div>
+    <header class="header">
+    <a class="logo" href="#">
+    <img class="logo" src="img/logo.png" alt=></a>
+    <ul class="nav">
+    <li> <a href="#">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    </ul>
     </header> 
     </div>
+    
 
     
     <div class="slideshow">
-    <div class="image"><img class="img1" src="img/image15.jpg" alt="covid" style="width:100%"></div>
-    <div class="image"><img class="img1" src="img/image12.jpg" alt="covid" style="width:100%"></div>
-    <div class="image"><img class="img1" src="img/image13.jpg" alt="covid" style="width:100%"></div>
+    <div class="image"><img class="img1" src="img/image16.jpg" alt="covid" style="width:100%"></div>
+    <div class="image"><img class="img1" src="img/image17.jpg" alt="covid" style="width:100%"></div>
+    <div class="image"><img class="img1" src="img/image18.jpg" alt="covid" style="width:100%"></div>
     </div>
    
   <div style="text-align:center">
@@ -49,21 +53,22 @@
   
   
     </div>
-    <h1 class="head">How you can help?</h1>
-    <ul class="first">
+    <h1 class="head" onClick="showMessage()" >How you can help?</h1>
+    <p class="headnam"></p>
+    <!-- <ul class="first">
         <li>Once</li>
         <li>Monthly</li>
-    </ul>
-    <input type="radio" id="Once" name="plan" value="Once">
-<label for="Once">Once</label><br>
+    </ul> -->
+    <input  type="radio" id="Once" name="plan" value="Once">
+<label class="radio"  for="Once">Once</label><br>
 <input type="radio" id="Monthly" name="plan" value="Monthly">
-<label for="Monthly">Monthly</label><br>
+<label class="radio" for="Monthly">Monthly</label><br>
     <div class="second">
-        <div class="subdiv" ><a href="#">$10</a></div>
-        <div class="subdiv" ><a href="#">$20</a></div>
-        <div class="subdiv"  ><a href="#">$30</a></div>
-        <div class="subdiv1" ><a href="#">$40</a></div>
-        <div class="subdiv1" ><a href="#">$50</a></div>
+        <a ><div class="subdiv1">$10</div></a>
+        <a ><div class="subdiv" >$20</div></a>
+        <a href="#"><div class="subdiv" >$30</div></a>
+        <a href="#"><div class="subdiv1" >$40</div></a>
+        <a href="#"><div class="subdiv1" >$50</div></a>
     </div>
     <h1>Your Information</h1>
     <form action="index.html" method="post">
@@ -72,9 +77,9 @@
         Email: <input type="email" id="mail"><br><br>
         Address: <input type="text" id="address"><br><br>
         City: <input type="text" id="name"><br><br>
-        contact No: <input type="text" id="name"><br><br>
+        Contact No: <input type="text" id="name"><br><br>
         <!-- <button class="button" type="submit" onclick= onClick='showMessage()'>Submit</button> -->
-		    <input class="button" type="button" id="btnShowMsg" value="Submit" onClick='showMessage()'/>
+		    <input class="button" type="button" id="btnShowMsg" value="Submit" />
 
     </form>  
    
@@ -85,7 +90,7 @@
 
     
 
-   
+    <p id="demo"></p>
     <script src="js/myscripts.js"></script>
 </body>
 </html>
