@@ -1,56 +1,74 @@
 body{
-  background-color:rgb(218, 219, 166);
+  background-color:rgb(240 241 223);
+}
+/* header */
+.container{
+  position: fixed;
+  height: auto;
+}
+
+.header,.nav{
+  display: flex;
+  flex-direction: row;
+  background-color:rgb(235, 224, 76);
+}
+
+.header{
+  padding-top: 1.8em;
+  margin-top: -10px;
+}
+
+.logo {
+  width: 110px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.nav{
+  margin-top:1.5em;
+  margin-left: auto; 
+}
+
+.nav a{
+  display: block;
+ 
+  font-size:1.5em;
+  font-weight :300;
+  padding:0.4em;
+  
 }
 
 .container {
-  display: flex;
-  flex-flow: row wrap;
-  flex-basis: content;
-  justify-content: flex-end;
-  padding-right: 30px;
-  font-size: x-large;
-  padding: 20px;
-  background-color:yellowgreen;
-  margin-top: -10px;
-  
+	width: 98.8%;
+}
+
+ul,li {
+  list-style-type: none; 
+  color: darkgreen;
+}
+
+a {
+  color: #656a6e;
+  text-decoration: none;
+  font-weight: 400; 
 }
 p{
-  color:red
+  color:grey;
+  font-size: 18px;
 }
-.logo {
-  width: 80px;
-  padding-right:850px;
-
-} 
-
-.boxa {
-    
-  padding: 10px;
-}
-.boxb{
-  
-  padding: 10px;
-}
-.boxc{
- 
-  padding: 10px;
-}
-.box1{
-
- padding-right: 800px;
-}
+/* image carousel */
 
 .slideshow {
   max-width: 100%;
-  padding-top: 120px;
+ padding-top: 135px; 
 }
+
 .img1 {
   height: 500px;
 }
 
 .image {
   display: none;
-
 }
 
 .dot {
@@ -66,91 +84,75 @@ p{
 .active, .dot:hover {
   background-color: #717171;
 }
+/* all body styling */
 
 .main{
   padding-left: 40px;
   padding-right: 40px;
 }
-header {
-  width: 98.8%;
-  position: fixed;
-}
-.first{
-  margin-top: 10px;
+/* radio button */
 
+.radio{
+  font-size: 30px;
 }
-.first li {
-    list-style-type: none;
-    display: inline;
-    background-color:gray;
-    font-size: x-large;
-    padding: 20px 10px;
-    color:green;
-    margin-top: 40px;
+/* options for donation */
 
-  
-   
-}
 .second {
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-  
-    
-    margin-top: 50px;
-   margin-left: 10px;
-
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin-top: 50px;
+  margin-left: 10px;
 }
+
+/* all anchor tag styling */
+
 a:link {
-    color: green; 
-    background-color: transparent; 
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: rgb(142, 197, 134);
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-    
-   
-
-
-h1{
-font-size: xx-large;
-color: rgb(100, 145, 91);
-text-align: center;
-
+  color: green; 
+  background-color: transparent; 
+  text-decoration: none;
 }
+  
+a:visited {
+  color:  rgb(8 130 13);;
+  background-color: transparent;
+  text-decoration: none;
+}
+  
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+  
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+    
+h1{
+  font-size: xx-large;
+  color: rgb(100, 145, 91);
+  text-align: center;
+}
+
 p{
-    text-align: center;
+  text-align: center;
 }
 .text{
-      font-size: xx-large;
-      color: rgb(58, 52, 52);
-  }
-   .row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-   }
+  font-size: xx-large;
+  color: rgb(58, 52, 52);
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
    
 .subdiv1{
-
   padding-right: 30px;
- 
   font-size: large;
   flex-basis: content;
   background-color: rgb(32, 27, 26);
@@ -161,46 +163,32 @@ p{
   margin-left: 30px;
 }
 
+.column{
+  max-width: 33.3%;
+  text-align: center;
+ }
 
+.img{
+  width:420px;
+}  
 
-  
-    
-    
-    
-   
-    .column{
-       max-width: 33.3%;
-       text-align: center;
-      
-   }
-     .img{
-     width:350px;
-    
-   } 
+.column1,.column2,.column3{
+  text-align: center;
+}
 
-  .column1,.column2,.column3{
-    text-align: center;
-  }
-      
-   
-   
-
-
-.subdiv{
-
-    padding-right: 30px;
-   
-    font-size: large;
-    flex-basis: content;
-    background-color: rgb(32, 27, 26);
-    padding-left: 30px ;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: left;
-    margin-left: 30px;
+.subdiv,.subdiv3{
+  padding-right: 30px;
+  font-size: large;
+  flex-basis: content;
+  background-color: rgb(32, 27, 26);
+  padding-left: 30px ;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+  margin-left: 30px;
   }
 
-
+/* submit button */
 .button{
  width: 100px;
  background:rgb(100, 145, 91); ;   
@@ -214,10 +202,11 @@ text-shadow:none;
 margin-bottom: 100px;
 
 }
+/* sticky footer */
 footer {
     position: fixed;
     left: 0;
-    /* bottom: 0; */
+    bottom: 0; 
     width: 100%;
     background-color:black;
     color: white;
@@ -228,23 +217,51 @@ footer {
   
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    .header{
+      flex-direction: column;
+    }
+  
+    .logo,.nav{
+      align-self: center;  
+     }
+       
+    .logo{
+      width:140px;
+      margin-left: -10px;
+      
+    }
+    
+    .nav{ 
+      margin-top: 3em;
+      flex-direction: column; 
+      margin-left: -3px;
+    }
+      
+    .nav a{
+      border-bottom-color: green ;
+    } 
+  
+  .slideshow{
+    padding-top: 375px;
+    border: green;
+  }
 
-  .column1{
+   .column1{
     width: 100%;
     height: auto;
     text-align: center;
-  
   }
+
   .img{
   width: 80%;
-  
   }  
+
   .column2{
     width: 100%;
     height: auto;
     text-align: center;
-  
   }
+  
   .column3{
     width: 100%;
     height: auto;
@@ -253,21 +270,43 @@ footer {
   .row{
     flex-direction: column;
   }
+
   .second{
     flex-wrap: wrap;
     padding-top: 20px;
   }
+
   .subdiv1{
     margin-top: 40px;
   }
+
   .img1{
     height: auto;
   }
-  .container{
-   
-    padding-top: -50px;
-  }
-  
 
   
+  }
+    
+  @media only screen 
+  and (min-device-width: 360px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .subdiv{
+      margin-top: 40px;
+    }
+
+    .button{
+      margin-top: 30px;
+    }
+    .nav{
+      margin-left: -39px;
+    }
+
+
+
 }
+
+    
+     
+
