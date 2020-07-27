@@ -1,32 +1,37 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
+  
 </head>
 
 <body>
     <div class="container">
-        <header class="header">
+            
             <a class="logo" href="#">
                 <img class="logo" src="img/logo.png" alt=></a>
-            <ul class="nav">
-                <li> <a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </header>
+            <div id="nav">
+                 <a href="#Home">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myNavigation()">
+            <i class="fa fa-bars"></i>
+            </a>
+            
     </div>
 
 
 
     <div class="slideshow">
         <div class="image"><img class="img1" src="img/image16.jpg" alt="covid" style="width:100%"></div>
-        <div class="image"><img class="img1" src="img/image17.jpg" alt="covid" style="width:100%"></div>
-        <div class="image"><img class="img1" src="img/image18.jpg" alt="covid" style="width:100%"></div>
+        <div class="image"><img class="img1" src="img/image20.jpg" alt="covid" style="width:100%"></div>
+        <div class="image"><img class="img1" src="img/image13.jpg" alt="covid" style="width:100%"></div>
     </div>
 
     <div style="text-align:center">
@@ -67,31 +72,28 @@
 
 
         </div>
-        <h1 class="head" onClick="showMessage()">How you can help?</h1>
-        <p class="headnam"></p>
-        <!-- <ul class="first">
-        <li>Once</li>
-        <li>Monthly</li>
-    </ul> -->
+        <h1 class="head">How you can help?</h1>
+      
+       
         <input type="radio" id="Once" name="plan" value="Once">
         <label class="radio" for="Once">Once</label><br>
         <input type="radio" id="Monthly" name="plan" value="Monthly">
         <label class="radio" for="Monthly">Monthly</label><br>
         <div class="second">
             <a>
-                <div class="subdiv1">$10</div>
+                <div id="subdiv1">$10</div>
             </a>
             <a>
-                <div class="subdiv">$20</div>
+                <div id="subdiv2">$20</div>
             </a>
             <a href="#">
-                <div class="subdiv">$30</div>
+                <div id="subdiv3">$30</div>
             </a>
             <a href="#">
-                <div class="subdiv1">$40</div>
+                <div id="subdiv4">$40</div>
             </a>
             <a href="#">
-                <div class="subdiv1">$50</div>
+                <div id="subdiv5">$50</div>
             </a>
         </div>
         <h1>Your Information</h1>
@@ -102,8 +104,7 @@
             Address: <input type="text" id="address"><br><br>
             City: <input type="text" id="name"><br><br>
             Contact No: <input type="text" id="name"><br><br>
-            <!-- <button class="button" type="submit" onclick= onClick='showMessage()'>Submit</button> -->
-            <input class="button" type="button" id="btnShowMsg" value="Submit" />
+            <input class="button" type="button" id="btnShowMsg" value="Submit" onclick="showMessage()" />
 
         </form>
 
@@ -111,11 +112,11 @@
             <p><a href="mailto:umangimistry2@gmail.com">umangimistry2@gmail.com</a></p>
         </footer>
 
+        <script src="js/myscripts.js"></script>ß
 
 
-
-        <p id="demo"></p>
-        <script src="js/myscripts.js"></script>
+    
+       
 </body>
 
 </html>

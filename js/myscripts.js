@@ -31,6 +31,13 @@ function myFunction() {
   document.getElementsByClassName("demo").style.color = "red";
   document.getElementsByClassName("demo").style.backgroundColor = "yellow";        
 }
-function showMessage(){
-  alert("Thank you for donating ");
+
+
+function myNavigation() {
+  var x = document.getElementById("nav");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
