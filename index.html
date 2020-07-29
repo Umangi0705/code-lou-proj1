@@ -7,27 +7,28 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
-  
+
 </head>
 
 <body>
+    <!-- logo and nav bar -->
     <div class="container">
-            
-            <a class="logo" href="#">
-                <img class="logo" src="img/logo.png" alt=></a>
-            <div id="nav">
-                 <a href="#Home">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myNavigation()">
+
+        <a class="logo" href="#">
+            <img class="logo" src="img/logo.png" alt="donate"></a>
+        <div id="nav">
+            <a href="#">Home</a>
+            <a>About</a>
+            <a>Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myNavigation()">
             <i class="fa fa-bars"></i>
-            </a>
-            
+        </a>
+
     </div>
 
 
-
+    <!-- image carousel -->
     <div class="slideshow">
         <div class="image"><img class="img1" src="img/image16.jpg" alt="covid" style="width:100%"></div>
         <div class="image"><img class="img1" src="img/image20.jpg" alt="covid" style="width:100%"></div>
@@ -44,27 +45,20 @@
 
     <div class="main">
         <h1>How it works!</h1>
-        <p>Covid-19 is officially a global pandemic. People are flocking to grocery stores to stock up on essentials.
-            Public schools––where many students receive their only meals of the day––have been shut down around the
-            country. The stock market is on shaky ground, and working from home has quickly become the new normal. It’s
-            easy to be overwhelmed by the constant stream of updates, all while feeling powerless to change anything for
-            the better. However, there are plenty of organizations doing important work right now to help those most
-            affected by the virus. Below are 15 ways you can make a difference by donating to support those efforts.</p>
+        <p>Covid-19 is officially a global pandemic. People are flocking to grocery stores to stock up on essentials. Public schools––where many students receive their only meals of the day––have been shut down around the country. The stock market is on
+            shaky ground, and working from home has quickly become the new normal. It’s easy to be overwhelmed by the constant stream of updates, all while feeling powerless to change anything for the better. However, there are plenty of organizations
+            doing important work right now to help those most affected by the virus. Below are 15 ways you can make a difference by donating to support those efforts.</p>
         <h1>Volunteers</h1>
-        <p class="text">Our compassionate medical and nonmedical volunteers give patients around the world a chance to
-            live normal lives that are healthier and more fulfilling.</p>
+        <p class="text">Our compassionate medical and nonmedical volunteers give patients around the world a chance to live normal lives that are healthier and more fulfilling.</p>
         <div class="row">
             <div class="column1"><img class="img" src="img/simage.jpg" alt="volunteers">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
             </div>
             <div class="column2"><img class="img" src="img/simage4.jpg" alt="volunteers">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
             </div>
             <div class="column3"><img class="img" src="img/simage2.jpg" alt="volunteers">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
 
                 </p>
             </div>
@@ -73,8 +67,8 @@
 
         </div>
         <h1 class="head">How you can help?</h1>
-      
-       
+
+        <!-- options for donating -->
         <input type="radio" id="Once" name="plan" value="Once">
         <label class="radio" for="Once">Once</label><br>
         <input type="radio" id="Monthly" name="plan" value="Monthly">
@@ -84,39 +78,32 @@
                 <div id="subdiv1">$10</div>
             </a>
             <a>
-                <div id="subdiv2">$20</div>
+                <div id="subdiv1">$20</div>
             </a>
-            <a href="#">
-                <div id="subdiv3">$30</div>
+            <a>
+                <div id="subdiv1">$30</div>
             </a>
-            <a href="#">
-                <div id="subdiv4">$40</div>
+            <a>
+                <div id="subdiv2">$40</div>
             </a>
-            <a href="#">
-                <div id="subdiv5">$50</div>
+            <a>
+                <div id="subdiv2">$50</div>
             </a>
         </div>
+        <!-- Information of user -->
         <h1>Your Information</h1>
         <form action="index.html" method="post">
-            First Name: <input type="text" id="name"><br><br>
-            Last Name: <input type="text" id="name"><br><br>
-            Email: <input type="email" id="mail"><br><br>
-            Address: <input type="text" id="address"><br><br>
-            City: <input type="text" id="name"><br><br>
-            Contact No: <input type="text" id="name"><br><br>
-            <input class="button" type="button" id="btnShowMsg" value="Submit" onclick="showMessage()" />
+            First Name: <input type="text" id="first name"><br><br> Last Name: <input type="text" id="last name"><br><br> Email: <input type="email" id="mail"><br><br> Address: <input type="text" id="address"><br><br> City: <input type="text" id="city name"><br><br>            Contact No: <input type="text" id="contact"><br><br>
+            <button id="button" onclick="showMessage()">submit</button>
 
         </form>
-
+        <!-- footer -->
         <footer>
             <p><a href="mailto:umangimistry2@gmail.com">umangimistry2@gmail.com</a></p>
         </footer>
 
-        <script src="js/myscripts.js"></script>ß
+        <script src="js/myscripts.js"></script>
 
-
-    
-       
 </body>
 
 </html>
