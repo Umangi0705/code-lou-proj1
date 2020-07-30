@@ -35,7 +35,6 @@ body {
 }
 
 #nav a {
-    display: block;
     font-size: 1.5em;
     font-weight: 300;
     padding: 0.5em;
@@ -270,7 +269,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 500px) and (min-width: 300px) {
+@media only screen and (max-width: 600px) and (min-width: 300px) {
     #subdiv1 {
         margin-top: 40px;
     }
@@ -282,7 +281,7 @@ footer {
     }
     .container {
         background-color: rgb(235, 224, 76);
-        height: 80px;
+        height: 100px;
         display: flex;
         align-items: center;
         box-sizing: border-box;
@@ -292,30 +291,35 @@ footer {
     .container a.icon {
         display: block;
         margin-left: auto;
+        position: absolute;
+        right: 0;
     }
     .container a {
         color: rgb(100, 145, 91);
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
+        display: block;
+        position: relative;
     }
     .logo {
         width: 3em;
         margin-left: -5px;
-        margin-bottom: -6px;
+        margin-bottom: -3px;
     }
     .main {
         margin-left: -10px;
         margin-right: -10px;
     }
-    #nav {
+    .container #nav {
         width: 100%;
         background: rgb(235, 224, 76);
         display: none;
         position: absolute;
+        top: 26px;
     }
     #nav a {
-        line-height: 50px;
+        line-height: 35px;
         text-align: center;
     }
     #nav a:hover {
