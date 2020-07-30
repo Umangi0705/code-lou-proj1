@@ -11,7 +11,8 @@ Important features:
  1. My project has responsive header with navbar which will collaps into a hamburger menu in mobile view.
  2. I have created image carousel with three images.
  3. I have added media query to make my project responsive in mobile as well as in iPad.
- 4. I have added three images which will 
+ 4. I have added three images which would be responsive in mobile view.
+ 5. Finally I added one feature for generating a message when you click submit button using java script.
 
 
 
